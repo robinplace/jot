@@ -94,3 +94,8 @@ JOT.controls.contrast.addEventListener ('click', function () {
 })
 
 
+JOT.textarea.addEventListener ('keydown', function (ev) {
+    if (ev.keyCode === 9) { // don't leave on <Tab>
+        ev.preventDefault ()
+    }
+})
