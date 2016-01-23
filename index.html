@@ -27,13 +27,15 @@ textarea {
 textarea#jot::selection { background: #b1cff1; color: #dfe1e0; opacity: 1; }
 
 textarea          { opacity: 1.0; transition: opacity 400ms; }
-textarea:disabled { opacity: 0.6; }
+/*textarea:disabled { opacity: 0.6; }*/
 
 #controls {
     position: fixed;
     top: 0; bottom: 0; right: 0;
     padding: 30px 0;
 }
+body       #controls button { background-color: rgba(197,200,198,0.2); }
+body.light #controls button { background-color: rgba(55,59,65,0.2); }
 #controls button {
     display: block;
     padding: 10px;
@@ -44,6 +46,9 @@ textarea:disabled { opacity: 0.6; }
     border: 0;
     cursor: pointer;
     outline: none;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 3px;
+    margin: 5px;
 }
 #controls button        { opacity: 0.2; transition: opacity 400ms; }
 #controls button:hover  { opacity: 1.0; }
@@ -57,9 +62,6 @@ body       #contrast circle { stroke: #c5c8c6; fill: none; }
 body.light #contrast circle { stroke: #373b41; fill: none; }
 body       #contrast path { stroke: #c5c8c6; fill: #c5c8c6; }
 body.light #contrast path { stroke: #373b41; fill: #373b41; }
-#contrast circle {
-    stroke-
-}
 </style>
 
 <body>
