@@ -28,13 +28,11 @@ window.addEventListener ('storage', function () {
 // WINDOW FREEZE ON BLUR MECHANISM
 window.addEventListener ('focus', function () { JOT.focus () })
 document.addEventListener ('visibilitychange', function () {
-    console.log ('vc')
     if (document.visibilityState === 'visible') JOT.focus ()
     else JOT.blur () })
 window.addEventListener ('blur', function () { JOT.blur () })
 JOT.focus = function () {
     JOT.focused = true
-    console.log ('in')
 
     // if there've been changes, update (see 'storage' listener)
     if (JOT.shouldUpdate) {
