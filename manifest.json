@@ -1,0 +1,17 @@
+{
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "description": "Simple, bulletproof new tab page for your thoughts.",
+   "icons": {
+      "128": "jot.128.png",
+      "18": "jot.18.png",
+      "48": "jot.48.png"
+   },
+   "manifest_version": 2,
+   "name": "Jot",
+   "permissions": [ "tabs", "storage" ],
+   "short_name": "Jot New Tab",
+   "version": "0.0.1"
+}
+
